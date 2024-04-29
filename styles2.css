@@ -1,0 +1,115 @@
+#h11
+{
+    text-align: center;
+    font-style: italic;
+    
+}
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+}
+#f1
+{
+    text-align: center;
+    position:relative;
+    padding-left: 500px;
+}
+.container {
+    text-decoration: wavy;
+    
+}
+#bb
+{
+  padding-left: 950px;  
+}
+
+header {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Styles */
+.hero {
+   
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.about {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.collections {
+    padding-left: 200px;
+}
+
+.collection {
+    margin-bottom: 40px;
+}
+
+.collection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+footer nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}

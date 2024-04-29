@@ -1,0 +1,26 @@
+h3{
+    background-color: blueviolet;
+    color: brown;
+    font-size: xx-large;
+}
+#myid
+{
+    background-color: aqua;
+    text-decoration:underline;
+    font-style:italic;
+    text-align: center;
+}
+.ecea
+{
+    color:darkslategray;
+    font-weight:bolder;
+    text-align:justify;
+}
+*
+{
+    color: coral;
+}
+h5,h6{
+    color: forestgreen;
+    text-align: end;
+}

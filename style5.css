@@ -1,0 +1,20 @@
+.grid-container
+{
+    display:grid;
+    grid-template-columns: 30px 40px  20px 25px;
+    gap: 10px;
+    grid-template-rows:30px 40px 20px 25px;
+    background-color: aqua;
+    padding: 2px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.grid-item
+{
+    padding: 5px;
+    font-size: medium;
+    color:black;
+    grid-gap:  20px ;
+    justify-content: space-evenly;
+    background-color: deeppink;
+}

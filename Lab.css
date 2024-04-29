@@ -1,0 +1,18 @@
+p{
+    color:blue
+}
+.highlight
+{
+    color: blue;
+    background-color:yellow;
+}
+#header
+{
+    font-size: 24px;
+}
+ul li{
+    list-style-type: square;
+}
+nav > ul{
+     background-color: lightgray;
+}

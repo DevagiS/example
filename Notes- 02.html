@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+<style>
+   table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="2">S.no</th>
+                <th>rollno</th>
+            </tr>
+            <tr></tr>
+                <td>1</td>
+                <td>2</td>
+                <td>001</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>001</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>001</td>
+            </tr>
+
+        </table>
+    </body>
+</html>
+<!doctype html>
+<html>
+    <head>
+        <title>FORM</title>
+        <style>
+            h2
+            {
+                font-style:initial;
+                color: crimson;
+            }
+            h3{
+                font-style:normal;
+            }
+            h6{
+                font-style: normal;
+            }
+            fieldset
+            {
+                height:fit-content;
+                width: FIT-content;
+            }
+            legend
+            {
+                color: crimson;
+            }
+            
+            
+        </style>
+    </head>
+    <body bgcolor="pink">
+            <h2>FILL THE FORM BELOW</h2>
+            <h3><FORM>
+                
+                <fieldset>
+                    <legend>PERSONAL DATA</legend>
+                <label for="fname"> ENTER FIRST NAME:</label>
+                <input type="password" id="fname" value="Abinaya">
+                <br>
+                ENTER LAST NAME:
+                <input type="text" id="lname" value="Kaveriselvam">
+                <br>
+                ADDRESS:
+                
+                <textarea rows="1" cols="20"></textarea>
+                <br>
+                <label for="cc">SELECT UR COLOUR:</label>
+                <input type="color" id="cc">
+                <BR>
+                    <LABEL FOR="DD">SELECT DOB:</LABEL>
+                    <INPUT type="date" ID="DD">
+                        <BR>
+                    <LABEL FOR="D">SELECT TOB:</LABEL>
+                    <INPUT type="TIME" ID="D">
+                        <BR>
+                            <label for="k">UPLOAD UR RESUME:</label>
+                            <input type="file" id="k">
+                            <br>
+                            <LABEL FOR="R">RANGE:</LABEL>
+                            <INPUT type="RANGE" ID="R">
+                                <BR>
+                                    <LABEL FOR="'NOW">DATE & TIME:</LABEL>
+                                    <INPUT TYPE="datetime-local" ID="NOW">
+                                        <BR>
+                                            <LABEL FOR="TT">ENTER AGE:</LABEL>
+                                            <INPUT TYPE="NUMBER" ID="TT">
+                                                <BR>
+                                                    AUDIO:
+                                                    <audio controls>
+                                                        <source src="song.mp3" >
+                                                        <source src="song.ogg" >
+                                                    </audio>
+                                                    <br>
+                                                    VIDEO:
+                                                    <video controls>
+                                                        <source src="song.mp4" >
+                                                        <source src="song.ogg" >
+                                                    </video>
+                                                    <br>
+                <label for="gen">SELECT YOUR GENDER:</label>
+                <BR>
+                <input type="radio" id="gen" name="gen">MALE
+                <input type="radio" id="gen" name="gen">FEMALE
+            </fieldset>
+                <BR>
+                    <fieldset>
+                        <legend>ACADEMICS</legend>
+                    <label for="ch">SKILLS:</label>
+                    <input type="checkbox" ID="CH">CPP
+                    <input type="checkbox" ID="CH">JAVA
+                    <input type="checkbox" ID="CH">ADP
+                    <BR>
+                        <LABEL for="LI">SELECT YOUR COLLEGE:</LABEL>
+                        <input list="LI">
+                        <datalist ID="LI">
+                            <option value="SKCET"></option>
+                            <option value="PSG"></option>
+                            <option value="AMRITA"></option>
+                            <option value="SKCT"></option>
+                        </datalist>                       
+                    </fieldset>
+                    <BR>
+                    <fieldset>
+                        <LEGEND> LOGIN CREDENTIALS</LEGEND>
+                        ENTER YOUR EMAIL ID:
+                        <INPUT type="email">
+                            <BR>
+                                ENTER YOUR PASSWORD:
+                            <INPUT TYPE="password">
+                    </fieldset>
+                        <BR>
+                <input type="button" id="button1" value="Submit">
+                <br>
+               <h6> FORM ONCE SUBMITTED CANNOT BE EDITTED</h6>
+            </FORM>
+            </h3>
+    </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent HTML Document</title>
+</head>
+<body>
+    <h1>Parent HTML Document</h1>
+    <p>Below is the students table:</p>
+    <!-- Embedding the students table using an iframe -->
+    <iframe src="Untitled-2.html" width="100%" height="300px" frameborder="0"></iframe>
+    <p>This is some other content in the parent document.</p>
+</body>
+</html>

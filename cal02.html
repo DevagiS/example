@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <style>
+        table
+        {
+            border:1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            width: 280px;
+            height: 100px;
+            background-color: black;
+        }
+        #result
+        {
+            width: 235px;
+            height: 100px;
+            font-size: 24px; 
+            font-weight: bold; 
+            border: 1px solid black; 
+            border-radius: 5px; 
+            
+        }
+        .clear,.number,.operator,.equal
+        {
+            width: 40px;
+            height: 40px;
+			padding: 0; 
+            margin: 0;
+			background-color: white; 
+			color: black; 
+			font-size: 15px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <table id="calc">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="C" class="clear"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="number"></td>
+            <td><input type="button" value="8" class="number"></td>
+            <td><input type="button" value="9" class="number"></td>
+            <td><input type="button" value="÷" class="operator" data-symbol="/"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="number"></td>
+            <td><input type="button" value="5" class="number"></td>
+            <td><input type="button" value="6" class="number"></td>
+            <td><input type="button" value="×" class="operator" data-symbol="*"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="number"></td>
+            <td><input type="button" value="2" class="number"></td>
+            <td><input type="button" value="3" class="number"></td>
+            <td><input type="button" value="-" class="operator" data-symbol="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" class="number"></td>
+            <td><input type="button" value="." class="number"></td>
+            <td><input type="button" value="=" class="equal"></td>
+            <td><input type="button" value="+" class="operator" data-symbol="+"></td>
+        </tr>
+    </table>
+        <script>
+            function handleButtonClick(value) 
+            {
+                const resultInput = document.getElementById("result");
+                const currentValue = resultInput.value;
+                resultInput.value += value;
+            }
+            document.querySelectorAll(".number").forEach(button => {
+            button.addEventListener("click", function() {
+                const value = this.value;
+                handleButtonClick(value);
+            });
+        });
+        let equalPressed = false;
+
+        function clearResult() 
+        {
+            if (equalPressed) 
+            {
+                document.getElementById("result").value = "";
+                equalPressed = false;
+            } 
+            else 
+            {
+                let currentValue = document.getElementById("result").value;
+                document.getElementById("result").value = currentValue.slice(0, -1);
+            }
+        }
+        document.querySelector(".equal").addEventListener("click", function() {
+        equalPressed = true;
+    });
+    document.querySelector(".clear").addEventListener("click", clearResult);
+        document.querySelectorAll(".operator").forEach(button => {
+            button.addEventListener("click", function() {
+                const symbol = this.getAttribute("data-symbol");
+                handleButtonClick(symbol);
+            });
+        });
+        document.querySelector(".clear").addEventListener("click", clearResult);
+        function evaluateExpression() {
+        const expression = document.getElementById("result").value;
+        try {
+        const result = eval(expression);
+        if (result === Infinity || isNaN(result)) 
+        {
+            throw "Error";
+        }
+        document.getElementById("result").value = result;
+        } 
+        catch (error) 
+        {
+            document.getElementById("result").value = "Error";
+        }
+    }
+    document.querySelector(".equal").addEventListener("click", evaluateExpression);
+    </script>
+</body>
+</html>
